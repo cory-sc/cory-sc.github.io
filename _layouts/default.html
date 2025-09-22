@@ -9,12 +9,16 @@
     <style>
         .content {
             padding: 40px 20px;
+            max-width: 100%;
+            overflow-x: hidden;
         }
         .markdown-content {
             background: rgba(0,0,0,0.8);
             padding: 20px;
             border: 2px solid #ccc;
             margin: 20px 0;
+            max-width: 100%;
+            overflow-x: hidden;
         }
         .markdown-content h1, 
         .markdown-content h2, 
@@ -35,6 +39,8 @@
             padding: 10px;
             border: 2px inset #666;
             overflow-x: auto;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .markdown-content blockquote {
             border-left: 4px solid #ff0000;
