@@ -1,3 +1,5 @@
+source: ./site
+destination: ./_site
 exclude:
   - webtui/
   - "webtui/**"
