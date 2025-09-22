@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="no-tui-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="{{ site.baseurl }}/dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/dist/tuicss.min.css">
+    <style>
+        .content {
+            padding: 40px 20px;
+        }
+        .markdown-content {
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            border: 2px solid #ccc;
+            margin: 20px 0;
+        }
+        .markdown-content h1, 
+        .markdown-content h2, 
+        .markdown-content h3 {
+            color: #ff0000;
+            border-bottom: 1px solid #666;
+            padding-bottom: 5px;
+        }
+        .markdown-content code {
+            background: #000;
+            color: #0f0;
+            padding: 2px 4px;
+            border: 1px solid #333;
+        }
+        .markdown-content pre {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            border: 2px inset #666;
+            overflow-x: auto;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            background: #ff0000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="tui-bg-blue-black relative">
+    <!-- Sidenav -->
+    <nav class="tui-sidenav absolute">
+        <ul>
+            <li>
+                <a href="{{ site.baseurl }}/">
+                    <span class="red-168-text">H</span>ome
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">P</span>rofile
+                    <span class="tui-shortcut">ctrl+p</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">S</span>earch
+                    <span class="tui-shortcut">ctrl+s</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Navbar -->
+    <nav class="tui-nav">
+        <span class="tui-datetime" data-format="h:m:s a"></span>
+        <ul>
+            <li class="tui-sidenav-button red-168-text">≡</li>
+            <li class="hide-on-med-and-down">
+                <a href="{{ site.baseurl }}/">
+                    <span class="red-168-text">H</span>ome
+                </a>
+            </li>
+            <li class="tui-dropdown hide-on-med-and-down">
+                <span class="red-168-text">H</span>elp
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Content -->
+    <div class="content container">
+        <div class="row">
+            <div class="col s12 white-text">
+                <a href="{{ site.baseurl }}/" class="back-link">← Back to Home</a>
+                <div class="tui-window">
+                    <fieldset class="tui-fieldset">
+                        {{ page.title | default: "Document" }}
+                        <hr>
+                        <div class="markdown-content white-text">
+                            {{ content }}
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Status bar -->
+    <div class="tui-statusbar fixed" style="bottom: 0px;">
+        <ul>
+            <li class="right" style="margin-right: 10px;"><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="#!">Profile</a></li>
+        </ul>
+    </div>
+</body>
+</html>

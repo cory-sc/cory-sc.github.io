@@ -6,3 +6,15 @@ exclude:
   - "**/*.astro"
   - "**/*.ts"
   - "**/*.tsx"
+
+
+theme: jekyll-theme-primer
+   plugins:
+     - jekyll-optional-front-matter
+     - jekyll-default-layout
+   
+   defaults:
+     - scope:
+         path: "*.md"
+       values:
+         layout: "tui"  # or "tui" if using the tui.html layout

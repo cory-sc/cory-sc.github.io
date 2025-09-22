@@ -1,3 +1,8 @@
+---
+layout: tui
+title: "Radio Manager on Windows 11"
+---
+
 First, make sure there are no remnants of SQL Server or Motorola software on the computer from a previous install. Use Revo uninstaller to remove all instances of 
 anything sql server or motorola, delete any folders for SQL Server, Microsoft SQL Server, or Motorola from Program Files, Program Files (x86) and ProgramData. 
 Paste the following into an administrator-elevated powershell to force a purge of anything with "SQL Server" or "Motorola" in its name.
