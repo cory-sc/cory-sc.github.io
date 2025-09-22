@@ -1,0 +1,11 @@
+#example-position
+    .grid
+        +grid($size, 1%, mediumorchid)
+        width: $size*5
+        height: $size*5
+    .plane-position
+    	+plane($size, $size, darkcyan)
+    	+shadow($size*.5, 0, 0)
+    	top: $size
+    	left: $size*2
+    	transform: translateZ($size*.5)

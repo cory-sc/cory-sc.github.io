@@ -1,0 +1,25 @@
+{
+	"name": "isometricsass",
+	"version": "1.0.7",
+	"description": "Isometric Sass Library",
+	"main": "src/sass/_isometric.sass",
+	"keywords": [
+		"sass",
+		"css",
+		"sass-framework",
+		"css-framework",
+		"simple",
+		"3d",
+		"isometric"
+	],
+	"author": "Morgan Caron",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MorganCaron/IsometricSass.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MorganCaron/IsometricSass/issues"
+	},
+	"homepage": "https://github.com/MorganCaron/IsometricSass#readme"
+}
