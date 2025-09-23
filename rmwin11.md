@@ -1,5 +1,5 @@
 ---
-layout: tui
+layout: default
 title: "Radio Manager on Windows 11"
 ---
 
